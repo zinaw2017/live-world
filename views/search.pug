@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='language', content='en-US')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='Find bars in '+city)
+    meta(property='og:type', content='website')
+    meta(property='og:title', content='Bars in '+city+' | remembar')
+    meta(property='og:description', content='Find bars in '+city+' and save them for the next time you go there.')
+    meta(property='og:url', content='https://remembar.herokuapp.com/city/'+city)
+    meta(property='og:site_name', content='remembar | bars in '+city)
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel='stylesheet', href='/css/style.css')
+    link(href="https://fonts.googleapis.com/css?family=Permanent+Marker", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Noto+Serif", rel="stylesheet")
+    script(src="https://use.fontawesome.com/a23e082358.js")
+  body
+    script.
+      var data = '!{data}';
+      var auth = '!{auth}';
+      var user = '!{user}';
+      var path = '!{path}';
+      var page = '!{page}';
+    - if (!auth) {
+      .navbarInner
+        .navbarLeft.pull-left
+          a.logo(href='/')
+            img(src='/assets/wine.jpeg')
+            span.hidden-xs HOME PAGE
+        .navbarRight.pull-right.nrInner
+          a.btn.btn-primary(href='/auth/facebook')
+            i.fa.fa-facebook
+            span.hidden-xs Sign in with Facebook
+    - } else {
+      #navbarAuth.navbarInner
+        .navbarLeft.pull-left
+          a.logo(href='assets/burger.jpeg')
+            img(src='/assets/burger.jpeg')
+            | 
+        .navbarRight.pull-right
+          a.btn.btn-danger.logoutBtn(href='/logout') Logout
+    - }
+    <form class="searchBarInner" action="/search" method="post">
+      <input class="searchInputInner" type="text" name="query" placeholder="Search by city name..." />
+      <input class="searchSubmitInner btn btn-primary" type="submit" value="SEARCH" />
+    </form>
+    #app
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-93782104-1', 'auto');
+      ga('send', 'pageview');
+    script(type='text/javascript', src='/build/bundle.js')

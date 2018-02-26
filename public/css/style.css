@@ -1,0 +1,436 @@
+body {
+	background:url("../../img/background.jpeg") no-repeat center center fixed;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif";
+}
+
+.jumbotron {
+  background: url('css/img/background.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar, .navbarInner {
+    margin: 0 auto !important;
+    border: none;   
+      background-color: ;
+}
+
+.navbar {
+  padding-top: 30px;
+  width: 95%;
+}
+
+.navbarInner {
+  margin-bottom: 40px !important;
+  height: 60px;
+  width: 100%;
+}
+
+.navbar p, .logo {
+    line-height: 60px;
+    margin: 0;
+    font-size: 30px;
+    font-family: '';
+    font-weight: bold;
+    color: black;
+}
+
+.logo:hover, .logo:active, .logo:focus {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbarLeft {
+  margin-left: 100px;
+}
+
+.navbarLeft img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.navbarRight {
+  margin-right: px;
+}
+
+.navbarRight a {
+  height: 35px;
+  margin-top: 12px;
+  margin-right:100 px;
+}
+
+i {
+    padding-right: 10px; 
+}
+
+.logoutBtn {
+    margin: 0 10px 0 0;
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+}
+
+.intro {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center !important;
+}
+
+.introHeadline, .introTxt {
+  color: #fff !important;
+  background: rgba(110,0,0,9); 
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.introHeadline {
+  font-size: 36px;
+  margin: 10% auto 0;
+  font-weight: bold;
+  max-width: 80%;
+}
+
+.introTxt {
+  font-size: 18px;
+  margin: 20px auto;
+}
+
+.searchBar {
+  margin: 20px auto;
+  width: 60%;
+}
+
+.inputBg {
+  padding: 10px;
+  background: rgba(0,200,0,0.5);
+  width: 60%;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.searchInput, .searchInputInner {
+  height: 50px;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.searchInput {
+  width: 100%;
+  display: block;
+}
+
+.searchBarInner {
+  margin: 30px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.searchInputInner {
+  width: 60%;
+  display: inline-block;
+}
+
+.searchSubmit, .searchSubmitInner {
+  margin: 20px auto 0;
+  padding: 10px 30px;
+  background-color: #8643c4;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.searchSubmit {
+  display: block;
+}
+
+.searchSubmit:hover, .searchSubmit:active, .searchSubmit:focus, .searchSubmitInner:hover, .searchSubmitInner:active, .searchSubmitInner:focus {
+  background-color: #8643c4;
+  color: #fff;
+  opacity: 1;
+}
+
+.searchSubmitInner {
+  display: inline-block;
+  height: 50px;
+  margin: 0 0 0 20px;
+}
+
+.result {
+  min-height: 120px; 
+  margin: 20px auto;
+  padding-top: 20px; 
+  padding-bottom: 20px;
+  padding-left: 10px;
+  display: block;
+}
+
+.result:hover {
+  border: 1px outset #999;
+  border-radius: 5px;
+}
+
+.imgCont {
+  margin-right: 20px;
+}
+
+.barInfo {
+  min-height: 100px;
+  padding: 0;
+}
+
+.barInfo * {
+  margin: 0;
+}
+
+.title {
+  display: block;
+}
+
+.barName {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.barReservations {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  margin: -10px 0 0 10px;
+  border: none;
+}
+
+.goBtn {
+  display: inline-block;
+  height: 30px; 
+  margin: -30px 20px 0 0;
+  float: right;
+  background-color: #8643c4;
+  border-color: #8643c4;
+}
+
+.goBtn2 {
+  display: inline-block;
+  height: 30px; 
+  margin: 0 20px 0 0;
+  float: right;
+  background-color: #8643c4;
+  border-color: #8643c4;
+  opacity:0.4;
+}
+
+.goBtn:hover, .goBtn:active, .goBtn:focus, .goBtn2:hover, .goBtn2:active, .goBtn2:focus  {
+  background-color: #8643c4;
+  border-color: #8643c4;
+}
+
+.goingBtn {
+  display: inline-block;
+  height: 30px; 
+  margin: -30px 20px 0 0;
+  float: right;
+}
+
+.barRating {
+  font-size: 14px;
+  color: #999;
+  line-height: 20px;
+  display: block;
+}
+
+.barAddress {
+  font-size: 14px;
+  color: #999;
+  line-height: 20px;
+  display: block;
+}
+
+.barSnippet {
+  font-size: 14px;
+  color: #999;
+  line-height: 15px;
+  min-height: 15px;
+  display: block;
+}
+
+
+.blankResults {
+  display: block;
+  height: 500px;
+}
+
+.offsetResults {
+  text-align: center;
+}
+
+.active {
+  background: darkblue;
+}
+
+.footer {
+  height: 30px;
+  line-height: 30px;
+	width: 100%;
+  border-top: 1px solid #ccc;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.footer a:hover, .footer a:active, .footer a:focus {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Start of media queries*/
+@media (max-width: 1200px) 
+{
+
+.navbar {
+  width: 100%;
+}
+
+.navbarLeft {
+  margin-left: 30px;
+}
+
+.navbarRight {
+  margin-right: 30px;
+}
+
+.introTxt {
+  font-size: 18px;
+  width: 80%; 
+}
+
+}
+
+@media (max-width: 768px) 
+{
+
+.navbar {
+  padding-top: 0;
+}
+
+.navbarLeft {
+  margin-left: 0;
+}
+
+.navbarLeft img {
+  margin: 20px 0 0 20px;
+}
+
+.logo img {
+  margin: 0 0 5px 20px;
+}
+
+.navbarRight {
+  margin-right: 0;
+}
+
+.navbarRight a {
+  margin: 20px 20px 0 0;
+}
+
+.searchBar {
+  width: 50%;
+}
+
+.inputBg {
+  width: 100%;
+}
+
+i {
+    padding-right: 0; 
+}
+
+.searchBarInner {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.searchInputInner {
+  width: 70%;
+  display: inline-block;
+}
+
+.searchSubmitInner {
+  width: 25%;
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+}
+
+.nrInner a {
+  margin-top: 12px;
+}
+
+
+
+.barName, .barReservations, .goBtn, .goBtn2, .goingBtn {
+  display: block;
+}
+
+.title {
+  position: relative;
+  min-height: 90px;
+}
+
+.barName {
+  font-size: 20px;
+  line-height: 22px;
+  min-height: 22px;
+}
+
+.barReservations {
+  font-size: 14px;
+  line-height: 16px;
+  color: #999;
+  text-align: left;
+  border: none;
+  margin: 0;
+}
+
+.goBtn, .goingBtn, .goBtn2 {
+  margin-left: 100px;
+  float: none;
+}
+
+.goBtn2 {
+  max-width: 100px;
+}
+
+.goBtn, .goingBtn {
+  margin-top: 0;
+}
+
+}
+
+// Styling for the footer
+footer {
+  padding: 30px 0 65px;
+  .list-inline {
+    margin: 0;
+    padding: 0;
+  }
+  .copyright {
+    font-size: 20px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}

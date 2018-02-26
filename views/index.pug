@@ -1,0 +1,78 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='language', content='en-US')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Never forget an indication again | remembar
+    meta(name='description', content='Remembar allows users to search for bars in a city and add themselves to any of those bars.')
+    meta(property='og:type', content='website')
+    meta(property='og:title', content='Never forget an indication again | remembar')
+    meta(property='og:description', content='Remembar allows users to search for bars in a city and add themselves to any of those bars.')
+    meta(property='og:url', content='https:///')
+    meta(property='og:site_name', content='remembar | save your favorite place')
+    meta(name='google-site-verification', content='lHiND_E_IhI_0IBvmPVX2cBF0DTk9Q2sDCNvCx2RNQU')
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel='stylesheet', href='/css/style.css')
+    link(href="https://fonts.googleapis.com/css?family=Permanent+Marker", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Noto+Serif", rel="stylesheet")
+    script(src="https://use.fontawesome.com/a23e082358.js")
+  body
+    script.
+      var auth = '!{auth}';
+    .jumbotron  
+      - if (!auth) {
+      .navbar
+        .navbarLeft.pull-left
+          p
+            a.searchBtn(href='/index1.html') Home Page
+            span.hidden-xs 
+
+              .navbar
+        .navbarLeft.pull-left
+          p
+            a.searchBtn(href='/team.html') Team Members
+            span.hidden-xs 
+
+
+              .navbar
+        .navbarLeft.pull-left
+          p
+            a.searchBtn(href='/contact.html') Contact Us
+            span.hidden-xs 
+
+              .navbar
+        .navbarLeft.pull-left
+          p
+            a.searchBtn(href='/forum.html') Forum
+        .navbarMiddle.pull-right
+           
+                    
+                            .navbar
+        .navbarRight.pull-right
+          p
+        
+      - } else {
+      #navbarAuth.navbar
+        .navbarRight.pull-right
+         
+        .navbarRight.pull-right
+          a.btn.btn-danger.logoutBtn(href='/logout') Logout
+      - }
+      .intro
+        <h2 class="introHeadline">Where should I go next ?</h2>
+       
+        <form class="searchBar" action="/search" method="post">
+          .inputBg
+            <input class="searchInput" type="text" name="query" placeholder="Search by city name..."/>
+          <input class="btn btn-default searchSubmit" type="submit" value="SEARCH" />
+        </form>
+      script.
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-93782104-1', 'auto');
+        ga('send', 'pageview');
+      script(type='text/javascript', src='/build/bundle.js')

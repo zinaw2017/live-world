@@ -1,0 +1,25 @@
+{
+  "name": "live-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "routes.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mongojs": "^2.5.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.4",
+    "serve-favicon": "^2.4.5",
+    "yelp": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Wondu yimer",
+  "license": "ISC"
+}

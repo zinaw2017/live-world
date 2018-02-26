@@ -1,0 +1,10 @@
+node_modules
+Procfile
+.vs
+.git
+app.use(session({secret: 'theeeusnightlifeapp'}));
+2018-02-25-22-29-32.png
+2018-02-25-22-36-19.png
+2018-02-25-22-41-41.png
+Capture.png
+facebookError.png
